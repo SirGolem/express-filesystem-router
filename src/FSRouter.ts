@@ -7,13 +7,11 @@ import { defaultRouterOptions, RouterOptions } from './types/RouterOptions';
 
 /**
  * Create a filesystem router.
- * @constructor
- * @name FSRouter
  * @param {string} directoryPath The directory to register routes from.
  * @param {RouterOptions} options Optional router settings.
  * @returns {Router} An Express router with routes and middleware registered.
  */
-const FSRouter = function (directoryPath: string, options: RouterOptions = defaultRouterOptions): Router {
+function FSRouter(directoryPath: string, options: RouterOptions = defaultRouterOptions): Router {
     if (!directoryPath) throw new Error(`Cannot create filesystem router from directory '${directoryPath}'`);
 
     const router: Router = Router();
@@ -38,7 +36,7 @@ const FSRouter = function (directoryPath: string, options: RouterOptions = defau
     });
 
     return router;
-} as any as { new (directoryPath: string): Router };
+}
 
 async function scanDirectory(
     baseDirPath: string,
