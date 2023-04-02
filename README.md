@@ -12,7 +12,7 @@ express-filesystem-router is a simple way to use the filesystem for ExpressJS ro
 
 ### Creation
 
-`new FSRouter(directoryPath: string, options?: RouterOptions)`
+`FSRouter(directoryPath: string, options?: RouterOptions)`
 
 * `directoryPath`: The path to the folder containing the route files.
 
@@ -50,12 +50,12 @@ export { middleware, ... }
 
 ```ts
 import * as express from 'express';
-import FSRouter from 'express-filesystem-router';
+import { FSRouter } from 'express-filesystem-router';
 
 const app = express();
 const port = 3000;
 
-app.use('/', new FSRouter(__dirname + '/routes'));
+app.use('/', FSRouter(__dirname + '/routes'));
 
 app.listen(port, () => console.log(`App listening on port ${port}`));
 ```
