@@ -1,6 +1,6 @@
-# express-filesystem
+# express-filesystem-router
 
-express-filesystem is a simple way to use the filesystem for ExpressJS route handling.
+express-filesystem-router is a simple way to use the filesystem for ExpressJS route handling.
 
 ## Features
 
@@ -50,7 +50,7 @@ If an exported Function[] called `middleware` is present it will be used as midd
 
 ```ts
 import * as express from 'express';
-import FSRouter from 'express-filesystem';
+import FSRouter from 'express-filesystem-router';
 
 const app = express();
 const port = 3000;
