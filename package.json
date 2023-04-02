@@ -1,14 +1,13 @@
 {
     "name": "express-filesystem-router",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "An easy-to-use filesystem router for express.",
-    "main": "build/index.js",
-    "types": "build/index.d.ts",
+    "main": "build/FSRouter.js",
+    "types": "build/FSRouter.d.ts",
     "files": [
         "build/**/*"
     ],
     "scripts": {
-        "dev": "ts-node src/test.ts",
         "build": "tsc",
         "prepare": "npm run build"
     },

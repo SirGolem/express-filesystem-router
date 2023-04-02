@@ -124,4 +124,4 @@ async function scanDirectory(
     return routes;
 }
 
-export default FSRouter;
+export { FSRouter };
