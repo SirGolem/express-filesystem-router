@@ -24,14 +24,14 @@ express-filesystem-router is a simple way to use the filesystem for ExpressJS ro
 The method is inferred from the exported function name (e.g. get, post etc.).
 
 ```ts
-    function get(req: Request, res: Response) { ... }
-    function post(req: Request, res: Response) { ... }
+function get(req: Request, res: Response) { ... }
+function post(req: Request, res: Response) { ... }
 
-    // 'delete' is a reserved keyword, so 'del' can be used instead
-    function del(req: Request, res: Response) { ... }
+// 'delete' is a reserved keyword, so 'del' can be used instead
+function del(req: Request, res: Response) { ... }
 
-    // 'all' can be used for handling all methods
-    function all(req: Request, res: Response) { ... }
+// 'all' can be used for handling all methods
+function all(req: Request, res: Response) { ... }
 ```
 
 ### Middleware
@@ -39,9 +39,9 @@ The method is inferred from the exported function name (e.g. get, post etc.).
 If an exported Function[] called `middleware` is present it will be used as middleware for that route.
 
 ```ts
-    const middleware: Function[] = [ ... ];
+const middleware: Function[] = [ ... ];
 
-    export { middleware, ... }
+export { middleware, ... }
 ```
 
 ## Example
